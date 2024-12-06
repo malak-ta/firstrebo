@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    background-image: url("./photos/back1549778399-f94fd24d4697.avif");
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.navbar{
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 5px;
+
+}
+.navbar .bars i{
+    font-size: 20px;
+    color: aliceblue;
+    display: none;
+
+}
+ul{
+    
+    overflow: auto;
+    display: flex;
+}
+
+.navbar .logo{
+    margin: 10px 0px;
+}
+.navbar ul li{
+    
+    list-style-type: none;
+    margin: 10px 5px;
+    padding: 10px 5px;
+    
+}
+
+.navbar ul li a{
+    color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: rgb(255, 0, 0);
+    padding: 5px;
+    
+}
+.main .content{
+    text-align: center;
+}
+
+.main .content h1{
+    margin-bottom: 15px;
+}
+.main .content button{
+    
+    border-radius: 20px;
+    border:2px solid black;
+    font-size: 25px;
+    margin: 0px 5px;
+    padding: 5px 30px;
+    transition: all 0.5s;
+}
+.main .content button:hover{
+    transform:scale(1.2);
+}
+.main .content button.btn1{
+    background-color: green;
+}
+.main .content button.btn2{
+    background-color: yellow;
+}
+.mission{
+    
+    background-image: url("./photos/free-photo-of-scenic-alpine-landscape-with-rustic-cabins.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mission .layout{
+    padding: 20px 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.mission .layout h2{
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    border:3px solid black ;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-top: 0px;
+}
+.mission .layout .content{
+    display:flex ;
+    flex-wrap: wrap;
+}
+.mission .layout .content .image{
+    width:50%;
+    text-align: center;
+
+}
+.mission .layout .content .missions{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.mission .layout .content .image img{
+    width:50%;
+}
+.mission .layout .content .missions .card{
+    width:45%;
+    
+}
+/*media query*/
+@media(max-width :991px){
+    .mission .layout .content .missions{
+        justify-content: center;
+    }
+
+}
+@media(max-width :776px){
+    .navbar .bars i{
+        display:block;
+        padding:10px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .main .content img{
+        width:100%;
+    }
+    .mission .layout h2{
+       width:40%; 
+    }
+    .mission .layout .content .image{
+        width:100%;
+        
+    
+    }
+    .mission .layout .content .missions{
+        width:100%;
+        
+    
+    }
+}
+@media(max-width:567px){
+    .mission .layout h2{
+        width:90%; 
+     }
+     .mission .layout .content .missions .card{
+        width:100%;
+        text-align: center;
+        margin-bottom: 15px;
+        
+    }
+
+}
